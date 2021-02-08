@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: white;
+}
+
+img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -5;
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+}
+
+.filter {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(13, 158, 255, 0.2);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 5%;
+  padding-top: 4rem;
+}
+
+header img {
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
+  cursor: pointer;
+}
+
+header .logo {
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+
+.text {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5%;
+}
+
+.text h1 {
+  font-size: 14.4rem;
+}
+
+.text h2 {
+  font-size: 9.6rem;
+  margin-bottom: 3rem;
+}
+
+.text a {
+  font-weight: bold;
+  color: #202020;
+  text-decoration: none;
+  font-size: 2.4rem;
+  background: white;
+  width: 15rem;
+  padding: 1rem 0;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.text a:hover {
+  letter-spacing: 3px;
+}
+
+.social {
+  margin-left: 4.2%;
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social img {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-right: 3rem;
+}
+
+.social img:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+/*# sourceMappingURL=style.css.map */
