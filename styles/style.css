@@ -59,7 +59,7 @@ header {
   padding-top: 4rem;
 }
 
-header img {
+header .toggle {
   -webkit-transform: scale(0.65);
           transform: scale(0.65);
   cursor: pointer;
