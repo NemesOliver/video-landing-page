@@ -11,6 +11,8 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   color: white;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
 img {
@@ -106,14 +108,13 @@ header {
 //animations
 .body-menu {
   width: 75%;
-  transition: 0.3s;
 }
 
 .side-menu {
   height: 100vh;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -0;
   width: 25%;
   background: lightblue;
   display: flex;
@@ -123,6 +124,39 @@ header {
   text-align: center;
   font-size: 2.4rem;
   background: rgb(228, 228, 228);
+  transform: translateX(100%);
+  transition: 0.3s;
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      li {
+        padding-bottom: 2rem;
+        color: #03dbe1;
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.side-menu-open {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -0;
+  width: 25%;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.4rem;
+  background: rgb(228, 228, 228);
+  transform: translateX(0%);
   transition: 0.3s;
   ul {
     list-style: none;
